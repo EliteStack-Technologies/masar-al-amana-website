@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
             
   <Link href="/" className="flex items-center gap-3">
-             <img src="/footer_logo.png" alt="Masar Al Amana Logo" className="h-20 w-auto object-contain" />
+             <img src="/footer_logo.png" alt="Masar Al Amana Logo" className="h-16 w-auto object-contain" />
           </Link>            </div>
             <p className="text-gray-400 text-sm mb-4">
               Your trusted partner for government and business services across all Emirates.
