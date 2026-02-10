@@ -27,11 +27,11 @@ export default function Header() {
     <>
       {/* Top Bar - Premium Dark Theme */}
       <div className="hidden lg:block bg-[#0A2316] text-white/80 text-xs py-2 border-b border-white/5">
-        <div className="container mx-auto px-6 lg:px-[100px] flex justify-between items-center">
+        <div className="container mx-auto px-6 lg:px-[80px] flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="mailto:masaralamana@gmail.com" className="flex items-center gap-2 hover:text-gold-accent transition-colors">
+            <a href="mailto:info@masaralamana.ae" className="flex items-center gap-2 hover:text-gold-accent transition-colors">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-              masaralamana@gmail.com
+              info@masaralamana.ae
             </a>
             <a href="tel:+971556541988" className="flex items-center gap-2 hover:text-gold-accent transition-colors">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
@@ -50,18 +50,18 @@ export default function Header() {
 
       {/* Main Header */}
       <header 
-        className={`sticky top-0 z-50 transition-all duration-300 ${
+        className={`fixed md:sticky top-0 z-50 w-full transition-all duration-300 ${
           scrolled ? 'bg-white backdrop-blur-lg shadow-lg py-2' : 'bg-white py-4'
         }`}
       >
-        <div className="container mx-auto px-6 lg:px-[100px]">
+        <div className="container mx-auto px-6 lg:px-[80px]">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
                <img 
                  src="/logo.png" 
                  alt="Masar Al Amana Logo" 
-                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-16' : 'h-20'}`} 
+                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-12' : 'h-14'}`} 
                />
             
             </Link>
@@ -110,14 +110,14 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Overlay */}
-        <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${
+        <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden z-30 ${
             isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)} 
         />
 
         {/* Mobile Menu Sidebar */}
-        <div className={`fixed top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl transition-transform duration-300 ease-out lg:hidden z-50 flex flex-col ${
+        <div className={`fixed top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl transition-transform duration-300 ease-out lg:hidden z-40 flex flex-col ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}>
             <div className="p-6 border-b border-gray-100 flex justify-between items-center bg-[#F8FAFC]">

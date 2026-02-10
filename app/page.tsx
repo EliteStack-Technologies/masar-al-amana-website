@@ -533,7 +533,7 @@ export default function Home() {
                 >
                   <span className="text-4xl lg:text-6xl font-black text-white group-hover:text-gold-accent transition-colors">
                     <span className="text-gold-accent opacity-50 text-2xl lg:text-4xl align-top mr-1"></span>
-                  +971 5565 41988
+                   +971 5661 57166
                   </span>
                 </Link>
                 <div className="mt-4 flex items-center justify-center lg:justify-end gap-2">
