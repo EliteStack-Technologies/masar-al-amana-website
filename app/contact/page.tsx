@@ -94,7 +94,7 @@ export default function Contact() {
                         Our Office
                       </h4>
                       <p className="text-text-gray font-medium leading-relaxed">
-                        Masar al amana Building # 565 Fire station Road Behind
+                        Masar Al Amana,Building # 565 Fire station Road Behind
                         munawar Ansari supermarket Muweilah Commercial,Sharjah,UAE
                       </p>
                     </div>
