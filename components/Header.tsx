@@ -54,7 +54,7 @@ export default function Header() {
           scrolled ? 'bg-white backdrop-blur-lg shadow-lg py-2' : 'bg-white py-4'
         }`}
       >
-        <div className="container mx-auto px-6 lg:px-[80px]">
+        <div className="container mx-auto px-6 ">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
