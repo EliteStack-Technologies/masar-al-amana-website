@@ -122,7 +122,7 @@ export default function Contact() {
                       </h4>
                       <p className="text-text-gray font-black text-lg">
                         <a
-                          href="tel:+971556541988"
+                          href="tel:+971566157166"
                           className="hover:text-uae-green transition-colors"
                         >
                            +971 5661 57166

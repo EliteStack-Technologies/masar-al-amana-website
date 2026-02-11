@@ -266,7 +266,7 @@ export default function Services() {
                   Direct Line
                 </div>
                 <Link 
-                  href="tel:+971556541988" 
+                  href="tel:+971566157166" 
                   className="group flex items-center justify-center lg:justify-end gap-3 transition-transform hover:scale-105"
                 >
                   <span className="text-4xl lg:text-6xl font-black text-white group-hover:text-gold-accent transition-colors">
