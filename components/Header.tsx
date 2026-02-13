@@ -50,7 +50,7 @@ export default function Header() {
 
       {/* Main Header */}
       <header 
-        className={`fixed md:sticky top-0 z-50 w-full transition-all duration-300 ${
+        className={`fixed lg:sticky top-0 z-50 w-full transition-all duration-300 ${
           scrolled ? 'bg-white backdrop-blur-lg shadow-lg py-2' : 'bg-white py-4'
         }`}
       >
@@ -110,7 +110,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Overlay */}
-        <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden z-30 ${
+        <div className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 lg:hidden z-20 ${
             isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
           onClick={() => setIsMenuOpen(false)} 
@@ -127,7 +127,7 @@ export default function Header() {
               </button>
             </div>
             
-            <div className="p-6 flex flex-col gap-2 overflow-y-auto flex-1">
+            <div className="p-6 flex flex-col gap-2 overflow-y-auto flex-1 ">
               {navLinks.map((link) => (
                 <Link 
                   key={link.name}
